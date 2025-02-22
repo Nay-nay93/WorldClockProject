@@ -12,6 +12,16 @@ losAngelesTimeElement.innerHTML = losAngelesTime.format("h:mm:ss [<small>]A[</sm
 
 }
 
+let athensElement = document.querySelector("#athens");
+if (athensElement) {
+let athensDateElement = athensElement.querySelector(".date");
+let athensTimeElement = athensElement.querySelector(".time");
+let athensTime = moment().tz("Europe/Athens");
+
+athensDateElement.innerHTML = athensTime.format("MMM Do YYYY");
+athensTimeElement.innerHTML = athensTime.format("h:mm:ss [<small>]A[</small>]");
+}
+
 let romeElement = document.querySelector("#rome");
 if (romeElement) {
 let romeDateElement = romeElement.querySelector(".date");
