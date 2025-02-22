@@ -1,4 +1,6 @@
 
+let intervalId; 
+
 function updateTime() {
 
 let losAngelesElement = document.querySelector("#los-angeles");
@@ -21,7 +23,9 @@ let romeTime = moment().tz("Europe/Rome");
 romeDateElement.innerHTML = romeTime.format("MMM Do YYYY");
 romeTimeElement.innerHTML = romeTime.format("h:mm:ss [<small>]A[</small>]");
 }
+
 }
+
 
 function updateCity(event) {
     let cityTimeZone = event.target.value;
@@ -37,7 +41,8 @@ function updateCity(event) {
         <div class="time">${cityTime.format("h:mm:ss")} <small>${cityTime.format("A")}</small></div>
     </div>`;
 
-  
+    setInterval(updateTime, 1000);
+
 }
 
 updateTime();
