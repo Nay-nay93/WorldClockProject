@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.46/moment-timezone-with-data.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WorldClock - Naomi Greco</title>
     <link rel="stylesheet" href="src/style.css" />
@@ -14,23 +19,34 @@
     <h1> World Clock</h1>
     <select name="" id="">
         <option value=""> Select a city </option>
-        <option value=""> London </option>
-        <option value=""> New York </option>
-        <option value=""> Aukland</option>
+        <option value="london"> London </option>
+        <option value="newYork"> New York </option>
+        <option value="aukland"> Aukland</option>
     </select>
 
     <div class="city">
-        <h2>Los Angeles</h2>
-        <div class="date"> February 22nd 2025</div>
-        <div class="time"> 12:56:54 PM</div>
+        <div>
+            <h2>Los Angeles US</h2>
+            <div class="date">August 15th 2022</div>
+        </div>
+        <div class="time">1:48:15 <small> AM </small></div>
     </div>
     <div class="city">
-        <h2>Rome</h2>
-        <div class="date"> February 22nd 2025</div>
-        <div class="time"> 12:56:54 PM</div>
+        <div>
+            <h2> Rome IT</h2>
+            <div class="date">August 15th 2022</div>
+        </div>
+        <div class="time">1:48:15 <small> AM </small></div>
     </div>
-</div>
-    <footer> 
+    <div class="city">
+        <div>
+            <h2> Athens GR</h2>
+            <div class="date">August 15th 2022</div>
+        </div>
+        <div class="time">1:48:15 <small> AM </small></div>
+    </div>
+   </div>
+<footer> 
         This project was coded by <a href="https://github.com/Nay-nay93" target="_blank">Naomi Greco</a>, is open sourced on <a href="https://github.com/Nay-nay93/WorldClockProject" target="_blank"> GitHub</a> and hosted on <a href="https://naysworldclock.netlify.app/" target="_blank">Netlify</a>
     </footer>
         <script src="src/index.js"></script>
